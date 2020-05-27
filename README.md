@@ -44,9 +44,35 @@ The data along with the acorn groups and acorn categories are plotted for having
 ![image1](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image1.jpeg)
 
 
-![image2](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image2.jpeg)
+![image2](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image2.png)
 
 The first figure shows the acorn group-wise line plots for all the meter. The second plot is for the mean-median distribution of the data. It's quite interesting from the boxplot (second plot) that for Adversity, affluent and comfortable groups, the distribution is almost similar. Now, the same thing has been done for different acorn categories (19 in total). The following figure is the acorn category distribution, which reveals the fact that many categories are also distributed in the same manner.
+
+![image3](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image3.png)
+
+Each algorithm has been applied for the unsupervised clustering of the Time-Series data and finally, different visualization techniques have been applied for deriving information from the clusters.
+
+All the algorithms have been implemented for the cluster numbers 3-15 and the silhouette coefficient has been calculated for each clustering technique. It has been found that cluster number= 5 gives the best silhouette coefficient value.
+
+
+All the algorithms, i.e. K-means, Hierarchical Clustering, DB Scan, and Autoencoder based K-means have been implemented with cluster number 5. Among these all, the Autoencoder based K-means shows the most promising result with the silhouette coefficient= 0.52, reconstruction accuracy of the autoencoder= 85% (approximately), and reconstruction loss = 0.002. The input dimension is (1130,132) and the output dimension for the encoder is (1130,10). The pre-processed Dataset has been used for this training.
+
+The result obtained from the Autoencoder based K-means is shown below:
+
+1. **Mean Cluster Visualisation** : The following figure shows the plot for the mean of the clustered data. The clusters seem well divided with a little overlapping.
+
+![4](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image4.jpeg)
+
+
+2. **Season Wise plot for the Clustered Meters:** The figures below shows the season-wise distribution of the clustered data. Two seasons are considered, i.e. Summer and Winter.
+
+![5](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image5.jpeg)
+
+![6](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image6.jpeg)
+
+It has been found that during winter the energy consumption becomes almost Twice for cluster No 3. For other clusters also, the consumption increases significantly, which is reflected in the plots.
+
+3. **Day wise Consumption for all the clusters:** This analysis shows how the clusters behave if the hours-wise average is calculated for the whole year and the data is plotted for a single week.
 
 --------------------------------------------------------------------------------------------------------------------------
 
