@@ -23,4 +23,13 @@ This project implements a prototype of time-series clustering of Smart Meter Dat
 * If some features contain large numbers, that can dominate the outcome while computing the distance metric between two data points, resulting in misleading results. So, Scaling has been done using MinMax Scaler so that no data can dominate others while computing the distance metric. All the monthly and weekly consumption related data have been scaled in such way.
 * Some algorithms may be unable to tackle the categorical data, although they might carry some meaningful information. For this reason, encoding has been also added which can take care of the categorical values. The London dataset contains only float values, but the first column Meter Id is categorical. So this encoding script will affect the categorical meter IDs and change them to integer 1,2,3,4...
 
+#### CLUSTERING ALGORITHMS
+For clustering of the processed dataset, 4 unsupervised clustering algorithms are implemented as follows:
+
+1.	K-Means Clustering
+2.	Agglomerative Hierarchical Clustering
+3.	DB Scan Clustering
+4.	Clustering Using Auto Encoder
+#### EXPERIMENTS
+
 
