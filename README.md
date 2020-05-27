@@ -38,6 +38,8 @@ For clustering of the processed dataset, 4 unsupervised clustering algorithms ar
 
 
 #### EXPERIMENTS
+
+The data along with the acorn groups and acorn categories are plotted for having an insight about how the Meter Data are distributed over the acorn groups and categories.
 --------------------------------------------------------------------------------------------------------------------------
 
 
