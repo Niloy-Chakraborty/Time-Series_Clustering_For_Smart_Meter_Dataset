@@ -40,8 +40,13 @@ For clustering of the processed dataset, 4 unsupervised clustering algorithms ar
 #### EXPERIMENTS
 
 The data along with the acorn groups and acorn categories are plotted for having an insight about how the Meter Data are distributed over the acorn groups and categories.
+
 ![image1](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image1.jpeg)
 
+
+![image2](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image2.jpeg)
+
+The first figure shows the acorn group-wise line plots for all the meter. The second plot is for the mean-median distribution of the data. It's quite interesting from the boxplot (second plot) that for Adversity, affluent and comfortable groups, the distribution is almost similar. Now, the same thing has been done for different acorn categories (19 in total). The following figure is the acorn category distribution, which reveals the fact that many categories are also distributed in the same manner.
 
 --------------------------------------------------------------------------------------------------------------------------
 
