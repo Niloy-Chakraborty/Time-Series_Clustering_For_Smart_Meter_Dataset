@@ -40,7 +40,7 @@ For clustering of the processed dataset, 4 unsupervised clustering algorithms ar
 #### EXPERIMENTS
 
 The data along with the acorn groups and acorn categories are plotted for having an insight about how the Meter Data are distributed over the acorn groups and categories.
-[!https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image1.jpeg]
+![image1](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image1.jpeg)
 
 
 --------------------------------------------------------------------------------------------------------------------------
