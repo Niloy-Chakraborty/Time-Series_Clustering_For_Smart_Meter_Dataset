@@ -74,6 +74,55 @@ It has been found that during winter the energy consumption becomes almost Twice
 
 3. **Day wise Consumption for all the clusters:** This analysis shows how the clusters behave if the hours-wise average is calculated for the whole year and the data is plotted for a single week.
 
+![7](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image7.jpeg)
+
+It has been found that, on Friday, Cluster 3 consumes the highest energy. Cluster 1 consumes the lowest energy throughout the week. The peak consumption hour has been recorded between 16:40 to 22:13:20, where cluster 3 consumes the highest energy between 0.7-0.8 units.
+
+4. **Resampled daily consumption for each cluster:** The clustered data has been resampled for a daily basis and the following figure shows the overall consumption throughout the year.
+
+![8](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image8.jpeg)
+
+The following figure shows the Quarterly distribution of the consumption, where it can be noted that in the quarter= 3, all the clusters records the lowest consumption.
+
+![9](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image9.png)
+
+5. **Acorn Group Wise Distribution of clusters:** Now let's look at the acorn-wise distribution of each cluster.
+
+![10](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image10.png)
+
+This figure shows the acorn-group distribution of the clusters. It is found that every cluster contains Meters from every acorn group. This is because of the fact the clustering method has been implemented without considering the acorn groups and there are many Meters from all the acorn groups where they follow similar consumption patterns.
+
+6. **Pearson Correlation Analysis with the Global Radiation Pattern Data:** The following box plot shows the correlation between the Global Radiation pattern data and the clustered data. The correlation found is not satisfactory.
+
+![11](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image11.png)
+
+7. **Self-Consumption Computation for all the meter IDs:** The Meter IDs have been scaled to a value to 1000KWh, the Radiation data (PV field) has also been scaled in the same manner. Finally, for each meter ID, the self-consumption amount has been calculated and stored in a csv file. For each acorn group and acorn category, the self-consumption data has been plotted in the Violin plot. As it is not possible to show the whole data in an interactive manner, a Bokeh-HoloView based plotting API has been used here. One plot has been uploaded in the repository for better understanding (Visualisation.html).
+
+
+8. **Percentage of Self-Consumption for each Acorn Group and Acorn Category:** For every Acorn group and Acorn Category, the percentage of the self-consumption has been plotted. The plots are shown below:
+
+![12](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image12.jpeg)
+
+This plot shows the percent of self-consumption of all the acorn groups. It is visible that, for all the acorn groups the density distribution of selfconsumption is between 30-40%. Even the median values also lie between this range.
+
+![13](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image13.jpeg)
+
+This plot shows the percent of self-consumption of all the acorn categories. It is also evident that, for all the acorn categories, the density distribution of self-consumption is between 30-40%. Even the median values also lie between this range. There is one exception in case of ACORN-B, where the selfconsumption lies below other categories.
+
+
+--------------------------------------------------------------------------------------------------------------------------
+
+
+#### REMARKS
+
+* In this project, the London Time Series dataset has been studied thoroughly. The initial steps include the cleaning and pre-processing of data and later;several algorithms have been implemented for grouping the Meter IDs into clusters, using Unsupervised Learning methods.
+
+* Among different methods, the Autoencoder based K-Means performs the best with the silhouette Score = 0.52, Acuracy= 85% and Loss= 0.002.
+
+* Although the Autoencoder based K-means clustering method clusters the Meters into several distinct groups, the mapping between the clusters and the Acorn Groups remain unsatisfactory. It is found that the clustered Meter IDs don't correlate to the ACorn Groups or Acorn Categories. Meters from different Acorn groups or Acorn Categories form the same clusters.
+
+* One possible reason for this could be, The energy consumption records from the acorn groups or acorn categories are not distinct from each other. In fact, the initial plots show that the mean, median, and the density distribution of the Meters IDs (Meter Ids from different Acorn groups and Categories) are similar. So, while clustering, these Meter IDs form the same clusters
+
 --------------------------------------------------------------------------------------------------------------------------
 
 
