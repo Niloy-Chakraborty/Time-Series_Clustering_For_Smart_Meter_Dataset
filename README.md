@@ -95,7 +95,7 @@ This figure shows the acorn-group distribution of the clusters. It is found that
 
 ![11](https://github.com/Niloy-Chakraborty/Time-Series_Stream_Clustering_on_London_Smart_Meter_Dataset/blob/master/IMAGES/image11.png)
 
-7. **Self-Consumption Computation for all the meter IDs:** The Meter IDs have been scaled to a value to 1000KWh, the Radiation data (PV field) has also been scaled in the same manner. Finally, for each meter ID, the self-consumption amount has been calculated and stored in a csv file. For each acorn group and acorn category, the self-consumption data has been plotted in the Violin plot. As it is not possible to show the whole data in an interactive manner, a Bokeh-HoloView based plotting API has been used here. One plot has been uploaded in the repository for better understanding (Visualisation.html).
+7. **Self-Consumption Computation for all the meter IDs:** The Meter IDs have been scaled to a value to 1000KWh, the Radiation data (PV field) has also been scaled in the same manner. Finally, for each meter ID, the self-consumption amount has been calculated and stored in a csv file. For each acorn group and acorn category, the self-consumption data has been plotted in the Violin plot. As it is not possible to show the whole data in an interactive manner, a Bokeh-HoloView based plotting API has been used here. 
 
 
 8. **Percentage of Self-Consumption for each Acorn Group and Acorn Category:** For every Acorn group and Acorn Category, the percentage of the self-consumption has been plotted. The plots are shown below:
