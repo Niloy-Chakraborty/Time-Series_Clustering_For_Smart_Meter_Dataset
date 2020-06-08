@@ -8,7 +8,6 @@ This project implements a prototype of time-series clustering of Smart Meter Dat
 
 #### DATA ANALYSIS AND DATA CREATION
 
-* The main dataset contains the smart meter data and their acorn distribution and it seems that for clustering only the smart meter usage data over time is needed. For this reason, The main dataset has been split into two DataFrames (DF).
 
 * The first DF contains the smart meter time-series data (17568 rows, 1132 columns) and the second DF contains the acorn distribution of each smart meter (1130 rows, 4 columns).
 
